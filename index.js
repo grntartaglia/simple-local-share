@@ -24,6 +24,7 @@ function walk(dir, done) {
       // Ignore .gitkeep and .DS_Store
       if (file === '.gitkeep' || file === '.DS_Store') {
         if (!--pending) return done(null, results);
+        return false;
       }
 
       file = path.join(dir, file);
