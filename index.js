@@ -1,6 +1,7 @@
 'use strict';
 var express  = require('express')
   , filesize = require('file-size')
+  , ip       = require('ip')
   , fs       = require('fs')
   , path     = require('path')
   , app      = express();
@@ -67,3 +68,5 @@ app.get('/download/*', function(req, res, next) {
 });
 
 app.listen(port);
+
+console.log('Server running at %s', 'http://' + ip.address() + ':' + port);
