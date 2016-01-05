@@ -1,0 +1,26 @@
+{
+  "name": "simple-local-share",
+  "version": "0.1.0",
+  "description": "Compartilhe arquivos na sua rede local de forma simples e rápida.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grntartaglia/simple-local-share.git"
+  },
+  "keywords": [
+    "share",
+    "local"
+  ],
+  "author": {
+      "name": "Gabriel Tartaglia",
+      "email": "gabriel@cappu.com.br"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grntartaglia/simple-local-share/issues"
+  },
+  "homepage": "https://github.com/grntartaglia/simple-local-share#readme"
+}
