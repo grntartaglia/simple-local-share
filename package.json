@@ -25,6 +25,7 @@
   "homepage": "https://github.com/grntartaglia/simple-local-share#readme",
   "dependencies": {
     "express": "^4.13.3",
+    "file-size": "^1.0.0",
     "jade": "^1.11.0"
   }
 }
