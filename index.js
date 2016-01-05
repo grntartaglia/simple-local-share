@@ -21,8 +21,10 @@ function walk(dir, done) {
     var pending = list.length;
     if (!pending) return done(null, results);
     list.forEach(function(file) {
-      // Ignore .gitkeep
-      if (file === '.gitkeep') { --pending; return; }
+      // Ignore .gitkeep and .DS_Store
+      if (file === '.gitkeep' || file === '.DS_Store') {
+        if (!--pending) return done(null, results);
+      }
 
       file = path.join(dir, file);
       fs.stat(file, function(err, stat) {
