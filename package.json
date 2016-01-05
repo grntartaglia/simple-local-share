@@ -15,12 +15,16 @@
     "local"
   ],
   "author": {
-      "name": "Gabriel Tartaglia",
-      "email": "gabriel@cappu.com.br"
+    "name": "Gabriel Tartaglia",
+    "email": "gabriel@cappu.com.br"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/grntartaglia/simple-local-share/issues"
   },
-  "homepage": "https://github.com/grntartaglia/simple-local-share#readme"
+  "homepage": "https://github.com/grntartaglia/simple-local-share#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
 }
