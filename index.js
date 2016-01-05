@@ -6,7 +6,7 @@ var express  = require('express')
   , path     = require('path')
   , app      = express();
 
-var port = 3000;
+var port = process.argv[2] || 3000;
 var shareFolder = 'share';
 
 function FileInfo(name, size) {
