@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Simple Local share
+  body
+    table
+      thead
+        tr
+          th Nome
+          th Tamanho
+          th Download
+      tbody
+        each file in files
+          tr
+            td= file.name
+            td= file.size
+            td
+              a(href='download/' + file.name) Download
