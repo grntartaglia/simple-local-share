@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Simple Local Share</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Tamanho</th>
+        <th>Download</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#files}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{size}}</td>
+          <td><a href="download/{{name}}">Download</a></td>
+        </tr>
+      {{/files}}
+    </tbody>
+  </table>
+</body>
+</html>

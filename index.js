@@ -2,6 +2,7 @@
 var express  = require('express')
   , filesize = require('file-size')
   , ip       = require('ip')
+  , engines  = require('consolidate')
   , fs       = require('fs')
   , path     = require('path')
   , app      = express();
@@ -43,7 +44,9 @@ function walk(dir, done) {
   });
 }
 
-app.set('view engine', 'jade');
+app.engine('mustache', engines.mustache);
+
+app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res) {
