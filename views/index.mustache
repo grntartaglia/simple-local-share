@@ -7,30 +7,34 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <input type="text" id="search">
+  <main role="main" id="wrapper">
+    <h1>Simple Share</h1>
 
-  <p id="not-found">
-    Nenhum arquivo encontrado. Tente novamente.
-  </p>
+    <input type="search" id="search" placeholder="Pesquisar">
 
-  <table id="files">
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Tamanho</th>
-        <th>Download</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#files}}
-        <tr class="file-item" data-name="{{name}}">
-          <td>{{name}}</td>
-          <td>{{size}}</td>
-          <td><a href="download/{{name}}">Download</a></td>
+    <p id="not-found">
+      Nenhum arquivo encontrado. Tente novamente.
+    </p>
+
+    <table id="files">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Tamanho</th>
+          <th>&nbsp;</th>
         </tr>
-      {{/files}}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {{#files}}
+          <tr class="file-item" data-name="{{name}}">
+            <td>{{name}}</td>
+            <td>{{size}}</td>
+            <td><a class="download" href="download/{{name}}">Download</a></td>
+          </tr>
+        {{/files}}
+      </tbody>
+    </table>
+  </main>
 
   <script src="js/app.js"></script>
 </body>
