@@ -3,25 +3,39 @@
 <head>
   <meta charset="utf-8">
   <title>Simple Local Share</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Tamanho</th>
-        <th>Download</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#files}}
+  <main role="main" id="wrapper">
+    <h1>Simple Share</h1>
+
+    <input type="search" id="search" placeholder="Pesquisar">
+
+    <p id="not-found">
+      Nenhum arquivo encontrado. Tente novamente.
+    </p>
+
+    <table id="files">
+      <thead>
         <tr>
-          <td>{{name}}</td>
-          <td>{{size}}</td>
-          <td><a href="download/{{name}}">Download</a></td>
+          <th>Nome</th>
+          <th>Tamanho</th>
+          <th>&nbsp;</th>
         </tr>
-      {{/files}}
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        {{#files}}
+          <tr class="file-item" data-name="{{name}}">
+            <td>{{name}}</td>
+            <td>{{size}}</td>
+            <td><a class="download" href="download/{{name}}">Download</a></td>
+          </tr>
+        {{/files}}
+      </tbody>
+    </table>
+  </main>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

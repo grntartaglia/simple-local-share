@@ -49,6 +49,8 @@ app.engine('mustache', engines.mustache);
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
 
+app.use(express.static(__dirname + '/assets'));
+
 app.get('/', function(req, res) {
   walk(shareFolder, function(err, data) {
     if (err) throw err;
