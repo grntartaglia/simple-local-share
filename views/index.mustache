@@ -6,7 +6,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <table>
+  <input type="text" id="search">
+
+  <p id="not-found">
+    Nenhum arquivo encontrado. Tente novamente.
+  </p>
+  
+  <table id="files">
     <thead>
       <tr>
         <th>Nome</th>
@@ -16,7 +22,7 @@
     </thead>
     <tbody>
       {{#files}}
-        <tr>
+        <tr class="file-item" data-name="{{name}}">
           <td>{{name}}</td>
           <td>{{size}}</td>
           <td><a href="download/{{name}}">Download</a></td>
