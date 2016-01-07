@@ -1,0 +1,6 @@
+{
+    "extends": "airbnb/base",
+    "rules": {
+      "no-var": 0
+    }
+}
