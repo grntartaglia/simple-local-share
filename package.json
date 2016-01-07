@@ -1,6 +1,6 @@
 {
   "name": "simple-local-share",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Compartilhe arquivos na sua rede local de forma simples e rápida.",
   "main": "index.js",
   "scripts": {
