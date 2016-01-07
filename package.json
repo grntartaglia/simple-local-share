@@ -1,10 +1,11 @@
 {
   "name": "simple-local-share",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Compartilhe arquivos na sua rede local de forma simples e rápida.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "./node_modules/.bin/eslint .; true"
   },
   "repository": {
     "type": "git",
@@ -15,12 +16,23 @@
     "local"
   ],
   "author": {
-      "name": "Gabriel Tartaglia",
-      "email": "gabriel@cappu.com.br"
+    "name": "Gabriel Tartaglia",
+    "email": "gabriel@cappu.com.br"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/grntartaglia/simple-local-share/issues"
   },
-  "homepage": "https://github.com/grntartaglia/simple-local-share#readme"
+  "homepage": "https://github.com/grntartaglia/simple-local-share#readme",
+  "dependencies": {
+    "consolidate": "^0.13.1",
+    "express": "^4.13.3",
+    "file-size": "^1.0.0",
+    "ip": "^1.1.0",
+    "mustache": "^2.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.0.2"
+  }
 }
