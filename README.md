@@ -5,7 +5,7 @@
 ```shell
 git clone https://github.com/grntartaglia/simple-local-share.git
 cd simple-local-share
-npm install && npm start
+npm install --production && npm start
 ```
 
 ## Compartilhando
