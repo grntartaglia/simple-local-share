@@ -3,7 +3,7 @@
 > Compartilhe arquivos na sua rede local de forma simples e rápida.
 
 ```shell
-git clone https://github.com/grntartaglia/simple-local-share.git
+git clone --branch stable https://github.com/grntartaglia/simple-local-share.git
 cd simple-local-share
 npm install --production && npm start
 ```
