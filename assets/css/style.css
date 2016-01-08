@@ -1,5 +1,5 @@
 /* import other style files */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400italic,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,600');
 
 /* reset */
 * {
@@ -8,6 +8,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	outline: none;
 }
 a,
 a:hover,
@@ -28,30 +29,42 @@ body {
 /* wrapper */
 #wrapper {
 	margin: 0 auto;
-	width: 720px;
+	width: 760px;
 }
 h1 {
-	font-size: 3em;
-	font-weight: normal;
+	font-size: 81px;
+	font-weight: 100;
 	text-align: center;
-	text-transform: uppercase;
-	line-height: 100%;
-	margin: 60px 0 50px;
+	line-height: 100px;
+	margin: 60px 0 40px;
+}
+h1 span {
+  color: #00adb5;
+  text-transform: uppercase;
 }
 p,
 table,
 input[type="search"] {
-	margin: 0 0 50px;
+	margin: 0 0 60px;
 }
 input[type="search"] {
 	font-family: 'Roboto';
-	font-size: 28px;
 	background: #3a4750;
-	padding: 10px 12px 9px;
-	border: 2px solid rgba(0,0,0,0.5);
+	padding: 10px 12px 10px;
+	border: 2px solid rgba(0,0,0,0.3);
 	border-radius: 5px;
 	width: 100%;
 	box-sizing: border-box;
+}
+input[type="search"]:focus {
+	border-color: rgba(0,0,0,0.5);
+}
+
+/* not found */
+#not-found {
+  padding: 13px 16px 12px;
+  border: 2px solid #ff5722;
+  border-radius: 2px;
 }
 
 /* files */
@@ -68,23 +81,26 @@ input[type="search"] {
 }
 #files th {
 	font-weight: normal;
-	border-bottom: 2px solid rgba(0,0,0,0.5);
+	border-bottom: 2px solid rgba(0,0,0,0.3);
 	padding-bottom: 20px;
 }
 #files td {
-	border-bottom: 2px solid rgba(0,0,0,0.5);
-	padding: 15px 0;
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	padding: 10px 0;
 }
 .download {
-	color: #eee;
+	color: #00adb5;
 	background-color: transparent;
-	border: 2px solid #00adb5;
-	border-radius: 5px;
-	padding: 12px 16px 11px;
+	border: none;
+	border-radius: 2px;
+	padding: 13px 16px 12px;
 	display: inline-block;
-	transition: all 0.8s;
+	transition: all 200ms;
+	text-transform: uppercase;
 }
 .download:hover {
-	color: #eee;
-	background-color: #00adb5;
+	background-color: rgba(0,0,0,.1);
+}
+.download:active {
+	background-color: rgba(0,0,0,.2);
 }
