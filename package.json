@@ -31,6 +31,5 @@
     "ip": "^1.1.0",
     "mustache": "^2.2.1"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
