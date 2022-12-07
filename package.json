@@ -26,7 +26,7 @@
   "homepage": "https://github.com/grntartaglia/simple-local-share#readme",
   "dependencies": {
     "consolidate": "^0.13.1",
-    "express": "^4.13.3",
+    "express": "^4.18.2",
     "file-size": "^1.0.0",
     "ip": "^1.1.0",
     "mustache": "^2.2.1"
